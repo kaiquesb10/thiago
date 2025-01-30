@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mestre de Kung Fu - Academia Wú</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">WÚ SPORTS</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#metodo">Método</a>
+            <a href="#modalidades">Modalidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="photo-logo">
+                <div class="logo-glow"></div>
+                <img src="images/logo.png" alt="Logo Wú Kung Fu" class="logo-img">
+            </div>
+            <div class="animated-text">
+                <span>Especialista em</span>
+                <span id="typing-effect"></span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Descubra mais</span>
+        </div>
+    </section>
+
+     <!-- Seção Sobre o Mestre -->
+     <section class="mestre" id="mestre">
+        <div class="mestre-pattern"></div>
+        <div class="mestre-container">
+            <div class="mestre-content">
+                <div class="mestre-text">
+                    <h2>Quem é Thiago Lóng?</h2>
+                    <div class="mestre-credentials">
+                        <div class="credential-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>Bacharel em Educação Física e Pós-graduado em Treinamento Esportivo</p>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-dumbbell"></i>
+                            <p>Especialista em Musculação, Powerlifting, LPO, Kung-fu Sanda e Calistenia</p>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-fire-extinguisher"></i>
+                            <p>10 anos como Bombeiro Militar, com experiência em preparação física para alta exigência</p>
+                        </div>
+                    </div>
+
+                    <div class="achievements">
+                        <h3>Histórico no Kung-fu Sanda</h3>
+                        <ul class="achievement-list">
+                            <li><i class="fas fa-trophy"></i> Tetracampeão estadual e interestadual</li>
+                            <li><i class="fas fa-medal"></i> Campeão de diversas copas regionais</li>
+                            <li><i class="fas fa-crown"></i> Campeão Brasileiro invicto em toda carreira competitiva</li>
+                        </ul>
+                    </div>
+
+                    <div class="mestre-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Com Thiago Lóng, você terá acesso a métodos validados na prática e comprovados na ciência para atingir resultados que vão além do comum.</p>
+                    </div>
+                </div>
+
+                <div class="mestre-photo">
+                    <div class="photo-frame">
+                        <div class="photo-border"></div>
+                        <img src="images/mestre.jpg" alt="Mestre Thiago Lóng">
+                    </div>
+                    <div class="chinese-seal">龍</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="method" id="metodo">
+      <h2>O Método Wú</h2>
+      <p class="method-subtitle">Descubra a excelência do treinamento com o Mestre Thiago Lóng</p>
+      <div class="method-grid">
+          <!-- Card 1 -->
+          <div class="method-card">
+              <div class="method-icon">
+                  <i class="fas fa-dragon"></i>
+              </div>
+              <h3>Filosofia Marcial</h3>
+              <p>Baseado nos princípios ancestrais do Kung Fu, nosso método une disciplina, respeito e autoconhecimento.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="method-card">
+              <div class="method-icon">
+                  <i class="fas fa-fire"></i>
+              </div>
+              <h3>Treino Intenso</h3>
+              <p>Programas personalizados para desenvolver força, resistência e agilidade, adaptados ao seu nível.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="method-card">
+              <div class="method-icon">
+                  <i class="fas fa-yin-yang"></i>
+              </div>
+              <h3>Equilíbrio Mental</h3>
+              <p>Meditação e técnicas de respiração para alcançar clareza mental e foco.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="method-card">
+              <div class="method-icon">
+                  <i class="fas fa-trophy"></i>
+              </div>
+              <h3>Resultados Comprovados</h3>
+              <p>Alunos que alcançaram níveis extraordinários de desempenho físico e mental.</p>
+          </div>
+      </div>
+  </section>
+
+    <section class="modalidades" id="modalidades">
+        <h2>Modalidades</h2>
+        <p class="modalidades-subtitle">Descubra o treinamento perfeito para alcançar seus objetivos com metodologia exclusiva e acompanhamento personalizado</p>
+        <div class="carrossel">
+            <div class="carrossel-container">
+                <div class="modalidade-card" onclick="openModal('taf')">
+                    <img src="images/taf1.png" alt="TAF">
+                    <h3>TAF e Emagrecimento</h3>
+                    <p>Preparação física especializada para concursos militares e programas de emagrecimento com resultados comprovados.</p>
+                </div>
+                <div class="modalidade-card" onclick="openModal('musculacao')">
+                    <img src="images/musc1.png" alt="Musculação">
+                    <h3>Musculação</h3>
+                    <p>Treinamento personalizado para ganho de massa muscular, força e definição, com acompanhamento exclusivo.</p>
+                </div>
+                <div class="modalidade-card" onclick="openModal('powerlifting')">
+                    <img src="images/power1.png" alt="Powerlifting">
+                    <h3>Powerlifting</h3>
+                    <p>Metodologia avançada para desenvolvimento máximo de força nos principais movimentos do powerlifting.</p>
+                </div>
+            </div>
+            <button class="carrossel-btn prev" onclick="moveCarrossel(-1)">&#10094;</button>
+            <button class="carrossel-btn next" onclick="moveCarrossel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Modais -->
+    <div id="taf-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>TAF e Emagrecimento</h3>
+                <span class="close" onclick="closeModal('taf')">&times;</span>
+            </div>
+            <p>Programa especializado para preparação física em concursos militares e perda de peso saudável. Nossa metodologia combina treinos de alta intensidade, exercícios específicos para provas físicas e acompanhamento nutricional personalizado.</p>
+            <img src="images/taf1.png" alt="TAF">
+            <p>Benefícios incluem:</p>
+            <ul>
+                <li>Preparação completa para provas físicas</li>
+                <li>Programas personalizados de emagrecimento</li>
+                <li>Acompanhamento individual</li>
+                <li>Avaliações periódicas de desempenho</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="musculacao-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Musculação</h3>
+                <span class="close" onclick="closeModal('musculacao')">&times;</span>
+            </div>
+            <p>Treinamento personalizado para desenvolvimento muscular, utilizando técnicas avançadas e periodização científica. Ideal para quem busca resultados expressivos em hipertrofia e definição muscular.</p>
+            <img src="images/musc1.png" alt="Musculação">
+            <p>Nosso programa inclui:</p>
+            <ul>
+                <li>Planejamento individualizado</li>
+                <li>Técnicas avançadas de treino</li>
+                <li>Acompanhamento nutricional</li>
+                <li>Avaliações físicas regulares</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="powerlifting-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Powerlifting</h3>
+                <span class="close" onclick="closeModal('powerlifting')">&times;</span>
+            </div>
+            <p>Metodologia especializada para desenvolvimento máximo de força nos três movimentos principais: agachamento, supino e levantamento terra. Programa ideal para atletas de força e competidores.</p>
+            <img src="images/power1.png" alt="Powerlifting">
+            <p>Destaques do programa:</p>
+            <ul>
+                <li>Técnica avançada dos movimentos</li>
+                <li>Periodização específica para força</li>
+                <li>Preparação para competições</li>
+                <li>Acompanhamento de performance</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Seção de Contato -->
+    <section class="contato" id="contato">
+        <div class="contato-pattern"></div>
+        <div class="contato-container">
+            <h2>Entre em Contato</h2>
+            <p class="contato-subtitle">Comece sua jornada de transformação hoje</p>
+            
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>Rua das Flores, 123 - Centro</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@wusports.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <form class="contato-form" onsubmit="return openAnamnese(event)">
+                    <div class="form-group">
+                        <input type="text" id="nome" required>
+                        <label for="nome">Nome Completo</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefone" required>
+                        <label for="telefone">Telefone</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="modalidade" required>
+                            <option value="">Selecione uma modalidade</option>
+                            <option value="taf">TAF e Emagrecimento</option>
+                            <option value="musculacao">Musculação</option>
+                            <option value="powerlifting">Powerlifting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" required></textarea>
+                        <label for="mensagem">Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn-submit">Iniciar Avaliação</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Anamnese -->
+    <div id="anamnese-modal" class="modal">
+        <div class="modal-content anamnese-content">
+            <div class="modal-header">
+                <h3>Avaliação Inicial</h3>
+                <span class="close" onclick="closeAnamnese()">&times;</span>
+            </div>
+            
+            <div class="anamnese-progress">
+                <div class="progress-bar"></div>
+                <div class="progress-steps">
+                    <span class="step active">1</span>
+                    <span class="step">2</span>
+                    <span class="step">3</span>
+                    <span class="step">4</span>
+                </div>
+            </div>
+
+            <form id="anamnese-form" class="anamnese-form">
+                <!-- Página 1: Informações Pessoais -->
+                <div class="anamnese-page active" data-page="1">
+                    <h4>Informações Pessoais</h4>
+                    <div class="form-group">
+                        <input type="text" id="nome" required>
+                        <label for="nome">Nome Completo</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" id="idade" required>
+                            <label for="idade">Idade</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="sexo" required>
+                                <option value="">Selecione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <label for="sexo">Sexo</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" id="altura" required>
+                            <label for="altura">Altura (cm)</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="peso" required>
+                            <label for="peso">Peso (kg)</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="profissao" required>
+                        <label for="profissao">Profissão</label>
+                    </div>
+                </div>
+
+                <!-- Página 2: Histórico de Saúde -->
+                <div class="anamnese-page" data-page="2">
+                    <h4>Histórico de Saúde</h4>
+                    <div class="form-group">
+                        <textarea id="historico_saude" rows="3" required></textarea>
+                        <label for="historico_saude">Doenças crônicas, lesões ou condições médicas</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="historico_familiar" rows="3" required></textarea>
+                        <label for="historico_familiar">Histórico familiar (Doenças cardíacas, diabetes, etc.)</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="medicacao" rows="2"></textarea>
+                        <label for="medicacao">Medicação atual</label>
+                    </div>
+                    <div class="form-row checkbox-group">
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <span>Fuma?</span>
+                                <div class="radio-options">
+                                    <label><input type="radio" name="fuma" value="sim" required> Sim</label>
+                                    <label><input type="radio" name="fuma" value="nao"> Não</label>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <span>Bebe?</span>
+                                <div class="radio-options">
+                                    <label><input type="radio" name="bebe" value="sim" required> Sim</label>
+                                    <label><input type="radio" name="bebe" value="nao"> Não</label>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Página 3: Atividade Física -->
+                <div class="anamnese-page" data-page="3">
+                    <h4>Perfil de Atividade Física</h4>
+                    <div class="form-group">
+                        <textarea id="atividade_atual" rows="2" required></textarea>
+                        <label for="atividade_atual">Atividade física atual (Esporte ou Recreação)</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="nivel_atividade" required>
+                            <option value="">Selecione</option>
+                            <option value="sedentario">Sedentário</option>
+                            <option value="levemente_ativo">Levemente ativo</option>
+                            <option value="ativo">Ativo</option>
+                            <option value="muito_ativo">Muito ativo</option>
+                        </select>
+                        <label for="nivel_atividade">Nível de atividade física diária</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="dias_treino" min="1" max="7" required>
+                        <label for="dias_treino">Dias disponíveis para treino por semana</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="experiencia_musculacao" rows="2" required></textarea>
+                        <label for="experiencia_musculacao">Experiência com musculação</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="lesoes_recentes" rows="2"></textarea>
+                        <label for="lesoes_recentes">Lesões recentes ou passadas</label>
+                    </div>
+                </div>
+
+                <!-- Página 4: Hábitos e Objetivos -->
+                <div class="anamnese-page" data-page="4">
+                    <h4>Hábitos e Objetivos</h4>
+                    <div class="form-group">
+                        <textarea id="habitos_alimentares" rows="3" required></textarea>
+                        <label for="habitos_alimentares">Hábitos alimentares (descreva sua dieta atual)</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="horas_sono" min="1" max="24" required>
+                        <label for="horas_sono">Horas de sono por dia</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="objetivos" rows="3" required></textarea>
+                        <label for="objetivos">Objetivos com o treinamento</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="observacoes" rows="3"></textarea>
+                        <label for="observacoes">Observações adicionais</label>
+                    </div>
+                </div>
+
+                <div class="anamnese-buttons">
+                    <button type="button" class="btn-prev" onclick="prevPage()">Anterior</button>
+                    <button type="button" class="btn-next" onclick="nextPage()">Próximo</button>
+                    <button type="submit" class="btn-submit" style="display: none;">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
